@@ -46,7 +46,7 @@ def save_to_csv(jobs_list,filename):
     with open("jobs.csv", mode="w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=["title","company", "location", "link"])
         writer.writeheader()
-        writer.writerows(job_list)  
+        writer.writerows(jobs_list)  
     
 
 def main():
